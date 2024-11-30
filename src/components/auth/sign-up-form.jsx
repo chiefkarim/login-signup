@@ -4,6 +4,8 @@ import { BsPersonFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { MdLock } from 'react-icons/md';
 import { BsTelephoneFill } from 'react-icons/bs';
+import {useNavigate} from 'react-router-dom'
+
 
 const SignUpForm = () => {
   const [fullName, setFullName] = useState('');
@@ -12,10 +14,13 @@ const SignUpForm = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setError('');
+    
+  navigate('/signup2')
     //Your validation logic here
     console.log('Form submitted:', { fullName, email, password, phoneNumber });
   };

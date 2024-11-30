@@ -50,7 +50,7 @@ input {
 }
 
 .submitButton {
-  background-color: var(--primary-color); /*Use your dark blue*/
+  background-color: var(--primary-color); 
   color: white;
   padding: 10px 100px;
   border: none;
@@ -58,8 +58,8 @@ input {
 }
 
 .imageContainer {
-  width:100%; /*Takes remaining space*/
-  background-color: #284B63;  /*Use your dark blue*/
+  width:100%; 
+  background-color: #284B63;  
   display: flex;
   position:relative;
   justify-content:center;
@@ -69,7 +69,7 @@ input {
 .imageContainer img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover;  /*Preserve aspect ratio*/
+  object-fit: cover; 
 
 }
 
@@ -111,3 +111,16 @@ left:0;
   font-size: 1.2em;
   color: #555; /* Adjust color as needed */
 }
+
+
+.rememberMe {
+  display: flex;
+  justify-content:start;
+  margin-bottom: 15px;
+}
+
+.rememberMe input[type="checkbox"] {
+  margin-right: 5px;
+  width:auto;
+}
+
